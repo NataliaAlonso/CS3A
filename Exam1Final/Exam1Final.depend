@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1330009694 source:c:\users\nat\documents\dropbox\codeblocks\exam1final\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+	<cmath>
+
+1330009638 c:\users\nat\documents\dropbox\codeblocks\exam1final\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1328050511 c:\users\nat\documents\dropbox\codeblocks\exam1final\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1330009431 source:c:\users\nat\documents\dropbox\codeblocks\exam1final\parser.cpp
+	"parser.h"
+
+1328059737 c:\users\nat\documents\dropbox\codeblocks\exam1final\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1328060798 source:c:\users\nat\documents\dropbox\codeblocks\exam1final\fraction.cpp
+	"fraction.h"
+
+1330009638 source:c:\users\nat\documents\dropbox\codeblocks\exam1final\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<stdexcept>
+	"parser.h"
+	"mixed.h"
+	"fraction.h"
+
+1328492355 source:c:\users\natalia alonso\dropbox\codeblocks\exam1final\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<stdexcept>
+	"parser.h"
+	"mixed.h"
+	"fraction.h"
+
+1328059737 c:\users\natalia alonso\dropbox\codeblocks\exam1final\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1327876340 c:\users\natalia alonso\dropbox\codeblocks\exam1final\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1328050511 c:\users\natalia alonso\dropbox\codeblocks\exam1final\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1328060318 source:c:\users\natalia alonso\dropbox\codeblocks\exam1final\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+	<cmath>
+
+1328144137 source:c:\users\natalia alonso\dropbox\codeblocks\exam1final\parser.cpp
+	"parser.h"
+
+1328060798 source:c:\users\natalia alonso\dropbox\codeblocks\exam1final\fraction.cpp
+	"fraction.h"
+
+1330013238 source:c:\users\natalia alonso\dropbox\cs3a\exam1final\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<stdexcept>
+	"parser.h"
+	"mixed.h"
+	"fraction.h"
+
+1328063337 c:\users\natalia alonso\dropbox\cs3a\exam1final\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1330013238 c:\users\natalia alonso\dropbox\cs3a\exam1final\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1328054111 c:\users\natalia alonso\dropbox\cs3a\exam1final\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1330013364 source:c:\users\natalia alonso\dropbox\cs3a\exam1final\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+	<cmath>
+
+1330013031 source:c:\users\natalia alonso\dropbox\cs3a\exam1final\parser.cpp
+	"parser.h"
+
+1328064398 source:c:\users\natalia alonso\dropbox\cs3a\exam1final\fraction.cpp
+	"fraction.h"
+

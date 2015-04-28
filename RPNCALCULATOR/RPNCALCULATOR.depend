@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1327701087 source:c:\users\natalia alonso\dropbox\codeblocks\rpncalculator\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<stdexcept>
+	<cstdlib>
+

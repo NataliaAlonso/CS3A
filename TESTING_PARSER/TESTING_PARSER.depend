@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1327703846 source:c:\users\natalia alonso\dropbox\codeblocks\testing_parser\parser.cpp
+	"parser.h"
+
+1327676905 c:\users\natalia alonso\dropbox\codeblocks\testing_parser\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1327626550 source:c:\users\natalia alonso\dropbox\codeblocks\testing_parser\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"parser.h"
+
+1327789272 source:c:\users\nat\documents\dropbox\codeblocks\testing_parser\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<stdexcept>
+	"parser.h"
+
+1327774248 c:\users\nat\documents\dropbox\codeblocks\testing_parser\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1327789796 source:c:\users\nat\documents\dropbox\codeblocks\testing_parser\parser.cpp
+	"parser.h"
+

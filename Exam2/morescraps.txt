@@ -1,0 +1,30 @@
+void reverseCopy(unique<T> &other)
+{
+	unique<R> reverse;
+	map<string,int>::iterator it;
+	i=0;	
+    	for(it = other.index.begin() ; it != other.index.end(); it++)
+        {
+		other.totals[i] = it-> second;
+		other.elements[i] = it-> first;
+		i++;	
+	}
+}
+
+void sort (unique<T> &other)
+{
+	vector<int> sortIndex;
+	for(int i = 0; i < other.elements.size(); i++)
+		sortIndex[i] = i;
+	for(i=0; i<sortIndex.size(); i++)
+  		for(int j=0; j<sortIndex.size(); j++)
+      			if(other.totals[sortIndex[i]] < other.totals[sortIndex[j]])
+         		{
+            			int temp = sortIndex[i];
+            			sortIndex[i] = sortIndex[j];
+            			sortIndex[j] = temp;
+         		}
+     	for(int i=0; i<count; i++)
+        outfile << setw( 5 ) << totals[sortIndex[i]] <<” “<< elements[sortIndex[i]] << endl;
+	system("start output.txt");
+}

@@ -1,0 +1,162 @@
+Creating a parser
+
+** Vectors need to be passed by reference because if not, they are passed by value and 
+any changes disappear.
+
+
+
+class parser
+{
+	public:
+		// Constructor
+		parser();
+		
+		// Destructor
+		~parser();
+		
+
+		// Copy constructor
+		parser(const parser& other);
+		
+
+		// Assignment operator
+		parser& operator=(const parser& other);
+
+		// Insertion operator
+		// Extracting from variable and putting into parser
+		parser& operator<<(string& data);
+		
+		// Input operator 
+		void input(string& data);
+
+		// Extrating operator
+		// Extracting from parser and putting into variable 
+		parser& operator>>(vector<string> &result);
+		
+		// The name of the function and variable must be different
+		void result(vector<string> &data);
+		
+
+	private:
+		vecotr<string> items;
+		string line;
+		void putResult();
+		void parse();
+		void binaryop();
+};
+
+	// Constructor
+	parser::parser()
+	{
+	}		
+	
+	// Destructor
+	parser::~parser()
+	{
+		
+	}
+		
+	// Copy constructor
+	parser::parser(const parser& other);
+		
+
+	// Assignment operator
+	parser& parser::operator=(const parser& other);
+
+	// Insertion operator
+	// Extracting from variable and putting into parser
+	parser& parser::operator<<(string& data)
+	{
+	
+	}
+	
+	// Input operator 
+	void parser::input(string& data)
+	{
+		line=data;
+		parse();
+	}
+	
+	void parser::parse()
+	{
+		int pos;
+		bool redo;
+		string temp;
+		while(line.size())	
+		{
+			redo=true;
+		    while(redo)
+		    {
+			redo=false;
+			pos = line.find_first_not_of("0123456789", pos);
+			if(pos < string::npos)
+			  switch(line[pos])
+			  {
+				case '+': 
+
+				case '-': 
+
+				case '/': 
+				
+				case '*': binaryOp(pos, redo);
+					  break;
+
+				case '(': items.push_back(line[pos]);
+					  line.erase(pos,1);
+					  break;
+				case ')': temp = line.substr(0,pos0);
+					  items.push_back(temp);
+					  line.erase(0,pos);
+				case '=': 
+				case '!': 
+				case '>': 
+				case '<': if( line[pos+1] == '=')
+					  {
+						items.push_back(line.substr(pos,2);	
+					  	line.erase(pos,2);
+					  }
+					  else
+					  	if( line[pos+1] == ' ')
+							binaryOp(pos);
+						else
+						{
+						redo = true;
+						line.insert(' ',pos+1);
+							break;			
+						}
+			   }
+			else
+			{
+				items.push_back(line);
+				line="";
+			}
+				
+		}
+	}
+
+	void binaryOp(int &pos,bool &redo)
+	{
+		if(line[pos-1]==' ' %% line[pos+1] == ' ')
+		{	
+			items.push_back(line[pos]);
+			line.erase(0,pos+1)
+			break;
+		}
+		else
+		{
+			redo = true;
+			pos++;
+		}
+	}
+
+	// Extrating operator
+	// Extracting from parser and putting into variable 
+	parser& parser::operator>>(vector<string> &result);
+
+	// The name of the function and variable must be different
+	void parser::result(vector<string> &data);
+
+	void parser::putResult(vector<string> &data)
+	{
+	
+

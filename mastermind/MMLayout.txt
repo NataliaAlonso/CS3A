@@ -1,0 +1,43 @@
+CODER CLASS
+
+User class gets CFG
+Compares to code
+Returns score [x,y]
+
+
+GUESSER CLASS
+
+Creates CFG
+Submits CFG
+Receives score [x,y]
+Saves CFG and score in an array
+Creates new CFG based on old CFG
+	1. Randomly keeps x pegs
+	2. Randomly moves y pegs
+	3. Fills empty peg with random color
+	4. EXCEPTION, if score was 0, remove colors from color pool, then create new guess
+Submits guess
+Receives score [x,y]
+Converts score [x,y] to a score 0-13
+Compare new score to old score
+	1. Store guess and score
+	2. If score is less than old score, then create new CFG based on old one
+	3. If score is greater than or equal to old score, set CFG to guess
+	4. Create new guess based on CFG
+Compare new guess to previous guesses
+	1. If guess is a previous guess, create new guess
+	2. If guess is not a previous guess, submit
+
+
+GUESSER VARIABLES NEEDED
+
+vector<string> guess;
+vector<string> CFG;
+vector<string> oldCFG;
+vector<string> newCFG;
+vector <char> colorArray;
+int score;
+vector<string> scoreArray; // This vector will have strings with the [x,y] score at the corresponding 0-13 index
+
+
+

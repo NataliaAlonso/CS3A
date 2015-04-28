@@ -1,0 +1,38 @@
+  Qty: Element
+
+    1: 1/1
+
+    1: 2/2
+
+    1: Civic
+
+   10: Deed
+
+   82: Did
+
+   56: Eye
+
+    3: II
+
+    2: III
+
+    1: Ii
+
+    1: Iii
+
+   17: Level
+
+    3: Mem
+
+    1: Non
+
+    1: Peep
+
+    9: Refer
+
+   31: Sees
+
+   13: Sexes
+
+    1: Www
+

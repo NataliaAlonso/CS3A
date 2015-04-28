@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1328749892 source:c:\users\natalia alonso\dropbox\codeblocks\mastermind\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+

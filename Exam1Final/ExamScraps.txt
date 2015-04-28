@@ -1,0 +1,209 @@
+    parser list;
+    string line;
+    vector<string> items;
+    do
+    {
+          cout<<"Line: ";
+          getline(cin, line);
+          list << line;
+          list >> items;
+
+stack<string> outputStack;
+stack<mixed> numberStack;
+stack<char> operatorStack;
+int pos;
+char op;
+
+for(i = 0; i < item.size(); i++)
+{
+	string parseItem;
+	parseItem = item[i];			
+	
+	if( ( pos = parseItem.find("0123456789",0)) > 0 ) // If there is a number...
+	{
+		mixed m = sterilize(parseItem);
+		numberStack.push(m);
+		outputStack.push(m);
+		parseItem.erase(pos,parseItem.length());
+		break;
+	}	
+	
+	if ( ( pos = parseItem.find("+-",0)) > 0 ) // If there is a + or -
+	{
+			op = convert(parseItem);
+			operatorStack.push(op);
+			outputStack.push(op);
+			parseItem.erase(pos,parseItem.length());
+			break;
+	}
+		
+	if ( ( pos = parseItem.find("*/",0) ) > 0 ) // If there is a * or /...
+	{
+			op = convert(parseItem);
+			if ( operatorStack.top() != "*" && operatorStack.top() != "/")
+			outputStack.push(parseItem);
+			mixed a(numberStack.pop());
+			mixed b(numberStack.pop());
+			mixed c(calculate(a,op,b));
+			numberstack.push(c);
+			parseItem.erase(pos,parseItem.length());
+			break;
+	}
+
+	if ( ( pos = parseItem.find("(",0)) > 0) // If there is a ( ...
+			output.push(parseItem);
+
+	if ( ( pos = parseItem.find(")",0)) > 0) // If there is a )...
+	{
+			while (operatorStack != "(")
+			{
+				op = operatorStack.pop();
+				outputStack.push(op);
+				mixed a(numberStack.pop());
+				mixed b(numberStack.pop());
+				mixed c(calculate(a,op,b));
+				numberstack.push(c);
+			}
+			parseItem.erase(pos,parseItem.length());
+				break;
+	}
+
+}
+	while (operatorStack.size() > 0)
+	{
+		op = operatorStack.pop();
+		outputStack.push(op);
+		mixed a(numberStack.pop());
+		mixed b(numberStack.pop());
+		mixed c(calculate(a,op,b));
+		numberstack.push(c);
+	}
+
+mixed result ( numberstack.pop());
+
+for (int j = 0; j < outputStack(); j++)
+	cout << outputStack.pop();
+
+cout << " = " << result << endl;
+
+
+}while(line != "");
+
+
+
+
+
+
+mixed sterilize(string s)
+{	
+	int whole;
+	int numerator;
+	char junk;
+	int denominator;
+	pos = s.find_first_of("-",0)
+	if (pos > 0 )
+		s.erase(pos,1);
+	else
+	{
+		pos = s.find_first_of("0123456789",0)
+		if ( pos > 0)
+		s.erase(pos,1);
+	}
+	string stream ss;
+	ss << s;
+	ss >> whole >> numerator >> junk >> denominator;
+	mixed m(whole, numerator, denominator);
+	return m;	
+}
+
+char convert(string s);
+{
+	char op;
+	stringstream ss;
+	ss < s;
+	ss >> op;
+	return op;
+}
+
+mixed calculate(mixed a, char op, mixed b)
+{
+	switch (op)
+	{
+	case '+': mixed c(a+b);
+	case '-': mixed c(a-b);
+	case '*': mixed c(a*b);
+	case '/': mixed c(a/b);	
+	}
+	return c;
+}				
+				 
+
+mixed calculate(mixed a, char op, mixed b);
+char convert(string s);	
+mixed sterilize(string s);	
+
+
+
+
+
+
+
+
+
+
+
+    while (cin >> token) 
+
+
+	{
+        if ( isdigit(parseItem[0]) || isdigit(parseItem[1] ) 
+	{ // if first or second is digit, it's number.
+         // convert to mixed number
+    
+	numberStack.push_back(atoi(token.c_str())); // convert, push
+            
+        } 
+
+	else 
+	{ // If it's not a number, assume it's an operator
+            int left, right;  //  used by some operators as temps
+
+            switch (token[0]) {  // assume operators are one char
+              case '+': opndStack.push_back(pop(opndStack) + pop(opndStack));
+                        break;
+              case '-': right = pop(opndStack); // get right operand
+                        left  = pop(opndStack); // get left operand
+                        opndStack.push_back(left - right);
+                        break;
+              case '*': opndStack.push_back(pop(opndStack) * pop(opndStack));
+                        break;
+              case '/': right = pop(opndStack); // get right operand
+                        left  = pop(opndStack); // get left operand
+                        opndStack.push_back(left / right);
+                        break;
+              default:  throw domain_error("Undefined operator");
+            }
+            cout << "Result: " << opndStack.back() << endl;
+        }
+    }
+    return 0;
+}//end main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

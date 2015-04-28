@@ -1,0 +1,47 @@
+CHANGE BINARY OP
+
+case '(' : op.push(line.substr(pos,1));
+	   line.erase(pos,1);
+	   break;
+case '*' : 
+case '/' :
+case '-' :
+case '+' : binaryOp(pos,redo);
+	   if ( ops.top() == "*" || ops.top() == "/")
+		items.push_back(ops.top());
+		ops.pop();
+		ops.push(line.substr(pos,1));
+		erase(pos,1);
+	   else
+		ops.push(line.substr(pos,1));
+		erase(pos,1);
+case ')' : items.push_back(line.substr(0,pos));
+	   while ( !op.empty())
+	   	items.push_back(ops.top());
+	   	ops.pop();
+
+
+
+void parser::binaryOp(int &pos, bool &redo)
+{
+    if(line[pos-1] == ' ' && line[pos+1] == ' ')
+	{
+	if ( ops.top() == "*" || ops.top() == "/")
+            {
+             items.push_back(ops.top());
+             ops.pop();
+             ops.push(line.substr(pos,1));
+	     }
+         else
+         {
+             ops.push(line.substr(pos,1));
+          }
+       	items.push_back(line.substr(0,pos));
+       	line.erase(0,pos+1);
+    	}
+    else
+    {
+      pos++;
+      redo = true;
+    }
+}

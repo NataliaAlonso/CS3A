@@ -1,0 +1,25 @@
+Algorithm
+1. Submit a "random" guess called CFG (curent favorite guess) 
+2. From the CFG, create new potential code
+3. If code has already been used, repeat step 2.
+4. If submitted guess score [0,0], suppress all colors from pool of colors. Repeat 2 with new pool of colors
+5. If the guess score is as good or better than CFG, set as new CFG and update best score
+6. If submitted score is [4,0], stop. Otherwise repeat step 2.
+
+Generate a code
+Enter a codebreaker
+Compare codebreaker to code
+Generate a score [x,y] where x is the number of correct pegs and y is the number of correct colors in the wrong place
+
+Using score:
+	If score is [0,0], suppress all colors in the code indefinitely.
+	Take code breaker
+	Randomly keep x pegs
+	Randomly move y pegs
+	IE. If 1234 has a score of [2,2], randomly keep "2" and "3", switch 4 and 1. Revaluate.
+	Compare new codebreaker to previously used entries, discard and redo if already present.
+	Submit new codebreaker and get score.
+	Repeat
+
+
+

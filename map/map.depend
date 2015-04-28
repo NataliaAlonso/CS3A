@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1328624018 source:c:\users\nat\documents\dropbox\codeblocks\map\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<string>
+	"map.h"
+
+1328219278 c:\users\nat\documents\dropbox\codeblocks\map\map.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<vector>
+

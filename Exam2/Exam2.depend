@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1329168032 source:c:\users\natalia alonso\dropbox\codeblocks\exam2\main.cpp
+	"unique.h"
+	"palindrom.h"
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<stack>
+	<fstream>
+
+1328911357 source:c:\users\nat\documents\dropbox\codeblocks\exam2\main.cpp
+	"unique.h"
+	"palindrom.h"
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<stack>
+	<fstream>
+
+1328625276 source:c:\users\nat\documents\dropbox\codeblocks\exam2\unique.cpp
+	"unique.h"
+
+1328850711 c:\users\nat\documents\dropbox\codeblocks\exam2\unique.h
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+
+1328848455 source:c:\users\nat\documents\dropbox\codeblocks\exam2\palindrom.cpp
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1328662837 source:c:\users\nat\documents\dropbox\codeblocks\exam2\parser.cpp
+	"parser.h"
+
+1328664447 c:\users\nat\documents\dropbox\codeblocks\exam2\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1328742937 c:\users\nat\documents\dropbox\codeblocks\exam2\palindrom.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+
+1328848455 source:c:\users\natalia alonso\dropbox\codeblocks\exam2\palindrom.cpp
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1328850711 c:\users\natalia alonso\dropbox\codeblocks\exam2\unique.h
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+
+1328742937 c:\users\natalia alonso\dropbox\codeblocks\exam2\palindrom.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+
+1328852055 source:c:\users\natalia alonso\dropbox\cs3a\exam2\palindrom.cpp
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1329171632 source:c:\users\natalia alonso\dropbox\cs3a\exam2\main.cpp
+	"unique.h"
+	"palindrom.h"
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<stack>
+	<fstream>
+
+1328854311 c:\users\natalia alonso\dropbox\cs3a\exam2\unique.h
+	<iostream>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+
+1328746537 c:\users\natalia alonso\dropbox\cs3a\exam2\palindrom.h
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+

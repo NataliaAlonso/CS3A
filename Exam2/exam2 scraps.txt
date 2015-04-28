@@ -1,0 +1,13 @@
+
+switch(selection)
+{
+	case '1':	inputAnyString();
+
+	case '2':	inputUniqueString();
+
+	case '3':	inputDouble();
+
+	case '4':	intputInt();
+
+	case '5':	intputChar();
+}

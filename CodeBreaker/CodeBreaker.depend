@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1329254478 source:c:\users\nat\documents\dropbox\codeblocks\codebreaker\main.cpp
+	"codebreaker.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1329231951 c:\users\nat\documents\dropbox\codeblocks\codebreaker\codebreaker.h
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	<string>
+
+1329366093 source:c:\users\nat\documents\dropbox\codeblocks\codebreaker\codebreaker.cpp
+	"codebreaker.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	<string>
+

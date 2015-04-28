@@ -1,0 +1,20 @@
+void mixed::convertImproper(mixed &x)
+{
+    if( abs(x.improper.numerator()) > x.improper.denominator() && x.improper.denominator() == 1)
+        whole= x.improper.numerator();
+
+    else if( abs(x.improper.numerator()) > x.improper.denominator() && x.improper.denominator()!= 1)
+        {
+	x.whole= x.improper.numerator()/x.improper.denominator(); 
+	x.frac.numerator = (x.improper.numerator()%x.improper.denominator()); 
+	x.frac.denominator() =  x.improper.denominator();
+	}
+
+          else if (  abs(x.improper.numerator()) == x.improper.denominator() )
+        	x.whole =  x.improper.numerator()/x.improper.denominator();
+
+            else if ( abs(x.improper.numerator()) < x.improper.denominator() )
+            x.frac = x.improper;
+
+
+}

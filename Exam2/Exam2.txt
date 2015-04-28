@@ -1,0 +1,35 @@
+Use maps to do everything
+
+Get input elements space delimmited
+	Use parser class
+	Use palindrome class
+
+
+template<typename T>
+map<T, int>
+
+template<typename T>
+map<T, int>::iterator it;
+
+
+IF USER SELECTS NON UNIQUE STRINGS
+for each item input
+	Convert all to lowercase
+	Convert first letter to uppercase
+	Search for punctuation
+	Delete punctuation at the end of a word
+
+IF USER SELECTS UNIQUE STRINGS
+for each item input
+	Search for punctuation
+	Delete punctuation at the end of a word
+
+COUNT ELEMENTS
+	Search next element:
+		If item is already in map:
+			Index will be the item
+			Increment map[item] ( map[item]++ )
+		If item is not in map
+			Insert item with a value of 1 ( map.insert(item,1) )
+
+IF USER SELECTS STRING, SEARCH FOR PALINDROMES

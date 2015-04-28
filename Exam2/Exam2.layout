@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1745" topLine="32" />
+	</File>
+	<File name="palindrom.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="221" topLine="0" />
+	</File>
+	<File name="palindrom.h" open="1" top="0" tabpos="3">
+		<Cursor position="146" topLine="0" />
+	</File>
+	<File name="unique.h" open="1" top="0" tabpos="2">
+		<Cursor position="218" topLine="101" />
+	</File>
+</CodeBlocks_layout_file>

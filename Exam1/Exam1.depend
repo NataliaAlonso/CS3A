@@ -1,0 +1,124 @@
+# depslib dependency file v1.0
+1327616669 source:c:\users\natalia alonso\dropbox\codeblocks\exam1\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+	<cmath>
+
+1327616619 c:\users\natalia alonso\dropbox\codeblocks\exam1\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1327590604 c:\users\natalia alonso\dropbox\codeblocks\exam1\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1327449433 source:c:\users\natalia alonso\dropbox\codeblocks\exam1\parser.cpp
+	"parser.h"
+	<cstring>
+
+1327617455 c:\users\natalia alonso\dropbox\codeblocks\exam1\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+
+1327616801 source:c:\users\natalia alonso\dropbox\codeblocks\exam1\fraction.cpp
+	"fraction.h"
+
+1327616619 source:c:\users\natalia alonso\dropbox\codeblocks\exam1\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<sstream>
+	<stack>
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	"calculator.h"
+
+1327616801 source:c:\users\nat\documents\dropbox\codeblocks\exam1\fraction.cpp
+	"fraction.h"
+
+1327590604 c:\users\nat\documents\dropbox\codeblocks\exam1\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1327790176 source:c:\users\nat\documents\dropbox\codeblocks\exam1\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+	<cmath>
+
+1327775424 c:\users\nat\documents\dropbox\codeblocks\exam1\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1327622796 source:c:\users\nat\documents\dropbox\codeblocks\exam1\parser.cpp
+	"parser.h"
+	<cstring>
+
+1327622796 c:\users\nat\documents\dropbox\codeblocks\exam1\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+	<stack>
+
+1327616619 source:c:\users\nat\documents\dropbox\codeblocks\exam1\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<sstream>
+	<stack>
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	"calculator.h"
+
+1327593786 c:\users\nat\documents\dropbox\codeblocks\exam1\calculator.h
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+
+1327593786 source:c:\users\nat\documents\dropbox\codeblocks\exam1\calculator.cpp
+	"calculator.h"
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+
+1327593786 c:\users\natalia alonso\dropbox\codeblocks\exam1\calculator.h
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+
+1327593786 source:c:\users\natalia alonso\dropbox\codeblocks\exam1\calculator.cpp
+	"calculator.h"
+	"mixed.h"
+	"fraction.h"
+	"parser.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	<stack>
+

@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1327460021 source:c:\users\natalia alonso\dropbox\codeblocks\exammixed\main.cpp
+	<iostream>
+	<cstdlib>
+	"mixed.h"
+	<string>
+	<sstream>
+	<iomanip>
+	"fraction.h"
+
+1327456657 c:\users\natalia alonso\dropbox\codeblocks\exammixed\mixed.h
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<sstream>
+	<fstream>
+	"fraction.h"
+
+1327456759 c:\users\natalia alonso\dropbox\codeblocks\exammixed\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1327459043 source:c:\users\natalia alonso\dropbox\codeblocks\exammixed\mixed.cpp
+	"mixed.h"
+	"fraction.h"
+
+1327449433 source:c:\users\natalia alonso\dropbox\codeblocks\exammixed\parser.cpp
+	"parser.h"
+	<cstring>
+
+1327419565 c:\users\natalia alonso\dropbox\codeblocks\exammixed\parser.h
+	<vector>
+	<string>
+	<iostream>
+	<cstdlib>
+
+1327456502 source:c:\users\natalia alonso\dropbox\codeblocks\exammixed\fraction.cpp
+	"fraction.h"
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="codebreaker.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="3914" topLine="121" />
+	</File>
+	<File name="codebreaker.h" open="1" top="1" tabpos="8">
+		<Cursor position="270" topLine="9" />
+	</File>
+	<File name="codemaker.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="5237" topLine="103" />
+	</File>
+	<File name="codemaker.h" open="1" top="0" tabpos="10">
+		<Cursor position="646" topLine="2" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="4749" topLine="79" />
+	</File>
+</CodeBlocks_layout_file>

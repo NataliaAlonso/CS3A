@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1327451735 source:c:\users\natalia alonso\dropbox\codeblocks\examfraction\main.cpp
+	<iostream>
+	<cstdlib>
+	"fraction.h"
+	<string>
+	<sstream>
+	<iomanip>
+
+1326841782 c:\users\natalia alonso\dropbox\codeblocks\examfraction\fraction.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1327451908 source:c:\users\natalia alonso\dropbox\codeblocks\examfraction\fraction.cpp
+	"fraction.h"
+

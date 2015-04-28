@@ -1,0 +1,158 @@
+mixed calculate(mixed a, char op, mixed b);
+char convert(string s);
+
+stack<string> outputStack;
+        stack<mixed> numberStack;
+        stack<char> operatorStack;
+
+        int pos;
+        char op;
+
+        for(int i = 0; i < item.size(); i++)
+        {
+            string parseItem;
+            parseItem = item[i];
+
+            if( isdigit(parseItem[0]) || isdigit(parseItem[1]) || isdigit(parseItem[2]) ) // If there is a number in the first three elements...
+            {
+                //mixed m(1,0,1);
+                numberStack.push(mixed(parseItem));
+                outputStack.push(parseItem);
+                parseItem.erase(pos,parseItem.length());
+                break;
+            }
+
+           else
+
+            if ( parseItem[0] == '+' || parseItem[0] == '-' ) // If there is a + or -
+            {
+                    op = convert(parseItem);
+                    operatorStack.push(op);
+                    outputStack.push(parseItem);
+                    parseItem.erase(pos,parseItem.length());
+                break;
+            }
+
+            else
+
+                if ( parseItem[0] == '*' || parseItem[0] == '/') // If there is a * or /...
+                {
+                    op = convert(parseItem);
+                    char opFind = operatorStack.top();
+                    if ( opFind != '*' && opFind != '/')
+                    outputStack.push(parseItem);
+                    mixed a(numberStack.top());
+                    numberStack.pop();
+                    mixed b(numberStack.top());
+                    numberStack.pop();
+                    //mixed c(calculate(a,op,b));//
+                    numberStack.push(calculate(a,op,b));
+                    parseItem.erase(pos,parseItem.length());
+                    break;
+                }
+
+            else if ( parseItem[0] == '(')// If there is a ( ...
+                    outputStack.push(parseItem);
+
+            else if ( parseItem[0] == ')')//If there is a )...
+            {
+                    while (operatorStack.top() != '(')
+                    {
+                        op = operatorStack.top();
+                        operatorStack.pop();
+                        string opStr;
+                        opStr.push_back(op/2
+                        outputStack.push(opStr);
+                        mixed a(numberStack.top());
+                        numberStack.pop();
+                        mixed b(numberStack.top());
+                        numberStack.pop();
+                        //mixed c(calculate(a,op,b));
+                        numberStack.push(calculate(a,op,b));
+                    }
+                    parseItem.erase(pos,parseItem.length());
+                        break;
+            }
+        }
+
+        while (operatorStack.size() > 0)
+        {
+            op = operatorStack.top();
+            operatorStack.pop();
+            string opStr;
+            opStr.push_back(op);
+            outputStack.push(opStr);
+            mixed a(numberStack.top());
+            numberStack.pop();
+            mixed b(numberStack.top());
+            numberStack.pop();
+            //mixed c(calculate(a,op,b));
+            numberStack.push(calculate(a,op,b));
+        }
+
+        mixed result (numberStack.top());
+        numberStack.pop();
+
+        for (int j = 0; j < outputStack.size(); j++)
+        {
+            cout << outputStack.top();
+            outputStack.pop();
+        }
+
+
+        cout << " = " << result << endl;
+
+
+    }while(line != "");
+
+
+}
+
+
+/*mixed correct(string& s)
+{
+        int pos;
+        int whole;
+        int numerator=0;
+        int denominator=1;
+        char junk;
+        pos = s.find_first_of("-0123456789",0);
+        if( s[pos-1] == ' ' )
+            s.erase(0,pos);
+        pos = 0;
+        pos = s.find_first_of(" ",0);
+        if ( pos == 0 )
+            {
+                pos = s.find_first_of("/",0);
+                if (pos > 0)
+                stringstream(s) >> numerator >> junk >> denominator;
+                else
+                stringstream(s) >> whole;
+            }
+        else
+        stringstream(s) >> whole >> numerator >> junk >> denominator;
+
+}*/
+
+char convert(string s)
+{
+	char op;
+	stringstream ss;
+	ss << s;
+	ss >> op;
+	return op;
+}
+
+mixed calculate(mixed a, char op, mixed b)
+{
+    mixed c(1,1,1);
+	switch (op)
+	{
+	case '+': c = a+b;
+	case '-': c = a-b;
+	case '*': c = a*b;
+	case '/': c = a/b;
+	}
+	return c;
+}
+

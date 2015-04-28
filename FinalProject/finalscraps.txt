@@ -1,0 +1,50 @@
+bool checkGuessElement()
+{
+	for(int i = 0; i < 4; i++)
+	{
+		for(int j = 0; j < colorArray.size(); j++)
+		{
+			if(guess[i] == colorArray[j])
+				return true;
+		}
+	}
+	return false;				
+}
+
+int main()
+{
+    cout << "Think of a code and the computer will try to guess." <<endl;
+    bool play = true;
+    bool win = false;
+    int guesses=10;
+    char choice;
+    while(play)
+    {
+        codebreaker newGame;
+        newGame.createFirstGuess();
+        while( !win && guesses > 0)
+        {
+        cout<< "Guess # " << guesses << " :";
+        newGame.displayGuess();
+        cout << "\nPlease enter score." <<endl;
+        int score;
+        cin >> score;
+        if ( score == 13 )
+            win = true;
+        newGame.getScore(score);
+        newGame.createGuess();
+        guesses--;
+        }
+
+        if(win)
+        cout << "Computer wins!" <<endl;
+        else
+        cout << "Computer lost! :( " <<endl;
+
+        cout << "Play again? Y or N" << endl;
+        cin >> choice;
+        choice = toupper(choice);
+        play = (choice == 'Y') ? true : false;
+    }
+    exit(0);
+}
